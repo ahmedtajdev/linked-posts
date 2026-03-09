@@ -1,5 +1,6 @@
 {
   "name": "linked-posts",
+  "homepage": "https://ahmedtajdev.github.io/linked-posts/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@heroui/react": "^2.8.8",
@@ -17,6 +20,7 @@
     "axios": "^1.13.4",
     "flowbite": "^4.0.1",
     "framer-motion": "^12.34.0",
+    "gh-pages": "^6.3.0",
     "jwt-decode": "^4.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
