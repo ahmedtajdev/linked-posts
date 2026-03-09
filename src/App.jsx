@@ -17,7 +17,7 @@ import MyProfile from "./Components/Profile/Profile";
 
 const router = createBrowserRouter([
   {
-    path: "linked-posts",
+    path: "",
     element: <Layout />,
     children: [
       {
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "linked-posts/home",
+        path: "home",
         element: (
           <ProtectedRoute>
             <Home />
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "linked-posts/login",
+        path: "login",
         element: (
           <AntiProtectedRoute>
             <Login />
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "linked-posts/register",
+        path: "register",
         element: (
           <AntiProtectedRoute>
             <Register />
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "linked-posts/profile",
+        path: "profile",
         element: (
           <ProtectedRoute>
             <MyProfile />
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "linked-posts/postDetails/:id",
+        path: "postDetails/:id",
         element: (
           <ProtectedRoute>
             <PostDetails />
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "linked-posts/userProfile/:userId",
+        path: "userProfile/:userId",
         element: (
           <ProtectedRoute>
             <UserProfile />
