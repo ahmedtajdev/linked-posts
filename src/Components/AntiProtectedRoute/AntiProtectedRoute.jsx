@@ -4,5 +4,5 @@ import { authContext } from "../../Context/authContext";
 
 export default function AntiProtectedRoute({ children }) {
   const { isAuthenticatedUser } = useContext(authContext);
-  return <>{isAuthenticatedUser ? <Navigate to={"/home"} /> : children}</>;
+  return <>{isAuthenticatedUser ? <Navigate to={"/linked-posts/home"} /> : children}</>;
 }

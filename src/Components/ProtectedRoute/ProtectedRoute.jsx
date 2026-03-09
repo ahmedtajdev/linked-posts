@@ -5,5 +5,5 @@ import { authContext } from "../../Context/authContext";
 export default function ProtectedRoute({ children }) {
   const { isAuthenticatedUser } = useContext(authContext);
 
-  return <>{isAuthenticatedUser ? children : <Navigate to={"/login"} />}</>;
+  return <>{isAuthenticatedUser ? children : <Navigate to={"/linked-posts/login"} />}</>;
 }
