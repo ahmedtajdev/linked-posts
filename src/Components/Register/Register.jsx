@@ -73,7 +73,7 @@ export default function Register() {
     },
   });
 
-	const {setAuthenticatedUserToken} = useContext(authContext)
+  const { setAuthenticatedUserToken } = useContext(authContext);
 
   const navigate = useNavigate();
 
@@ -84,10 +84,10 @@ export default function Register() {
     axios
       .post("https://route-posts.routemisr.com/users/signup", userData)
       .then((response) => {
-				const token = response.data.data.token;
+        const token = response.data.data.token;
         console.log("response:", response);
-        setRegisterStatus("success");				
-				setAuthenticatedUserToken(token);
+        setRegisterStatus("success");
+        setAuthenticatedUserToken(token);
         localStorage.setItem("userToken", token);
       })
       .catch((error) => {
