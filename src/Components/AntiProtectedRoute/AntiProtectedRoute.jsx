@@ -6,7 +6,7 @@ export default function AntiProtectedRoute({ children }) {
   const { isAuthenticatedUser } = useContext(authContext);
   return (
     <>
-      {isAuthenticatedUser ? <Navigate to={"/linked-posts/home"} /> : children}
+      {isAuthenticatedUser ? <Navigate to={"/home"} /> : children}
     </>
   );
 }
