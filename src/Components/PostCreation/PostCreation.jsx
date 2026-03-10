@@ -18,7 +18,7 @@ import { MdOutlineAddPhotoAlternate } from "react-icons/md";
 import { useContext, useRef, useState } from "react";
 import testImg from "./../../assets/images/image-placeholder.jpg";
 import axios from "axios";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { ThreeDots } from "react-loader-spinner";
 

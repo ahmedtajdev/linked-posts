@@ -13,7 +13,7 @@ import {
   Avatar,
   Button,
 } from "@heroui/react";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import axios from "axios";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-toastify";

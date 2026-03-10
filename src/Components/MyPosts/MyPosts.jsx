@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
 import PostCard from "./../PostCard/PostCard";

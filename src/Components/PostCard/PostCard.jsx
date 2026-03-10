@@ -26,7 +26,7 @@ import axios from "axios";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-toastify";
 import LoadingPage from "../LoadingPage/LoadingPage";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { MdOutlineAddPhotoAlternate } from "react-icons/md";
 import { ThreeDots } from "react-loader-spinner";
@@ -232,8 +232,12 @@ export default function PostCard({
                 <Button color="danger" variant="light" onPress={onClose}>
                   Cancel
                 </Button>
-                <Button disabled={isPending} color="primary" onPress={updatePost}>
-                 {isPending ? (
+                <Button
+                  disabled={isPending}
+                  color="primary"
+                  onPress={updatePost}
+                >
+                  {isPending ? (
                     <ThreeDots
                       visible={true}
                       height="30"

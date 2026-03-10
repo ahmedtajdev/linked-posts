@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useContext } from "react";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import { useQuery } from "@tanstack/react-query";
 import LoadingPage from "../LoadingPage/LoadingPage";
 import {
@@ -38,23 +38,19 @@ export default function MyProfile() {
             <CardHeader className="justify-between">
               <div className="flex gap-5">
                 <div className="relative w-25 h-25 lg:w-37.5 lg:h-37.5">
-                  <Avatar className="w-full h-full"
+                  <Avatar
+                    className="w-full h-full"
                     isBordered
                     radius="full"
                     // size="lg"
                     src={myProfileData.photo}
                   />
                   <label className="text-white cursor-pointer">
-										<span className="flex justify-center items-center rounded-full bg-gray-500 absolute bottom-0 -left-1 lg:left-2 w-7.5 h-7.5">
-
-                    <IoCamera size={25} />
-										</span>
-                    <input
-                      type="file"
-                      hidden
-                    />
+                    <span className="flex justify-center items-center rounded-full bg-gray-500 absolute bottom-0 -left-1 lg:left-2 w-7.5 h-7.5">
+                      <IoCamera size={25} />
+                    </span>
+                    <input type="file" hidden />
                   </label>
-									
                 </div>
                 <div className="flex flex-col gap-1 items-start justify-center">
                   <h4 className="text-4xl font-semibold leading-none text-default-600 mb-3">

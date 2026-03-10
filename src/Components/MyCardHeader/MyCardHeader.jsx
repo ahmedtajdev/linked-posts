@@ -10,7 +10,7 @@ import {
 import { TfiMoreAlt } from "react-icons/tfi";
 import userPlaceholder from "../../assets/images/userPlaceholder.jpg";
 import { useContext, useState } from "react";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import { Link } from "react-router-dom";
 
 export default function MyCardHeader({

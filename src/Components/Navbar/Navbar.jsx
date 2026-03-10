@@ -14,7 +14,7 @@ import {
 } from "@heroui/react";
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 
 export default function MyNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

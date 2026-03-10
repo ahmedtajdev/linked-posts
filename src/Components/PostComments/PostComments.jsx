@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import { useQuery } from "@tanstack/react-query";
 import LoadingPage from "../LoadingPage/LoadingPage";
 import CommentCard from "../CommentCard/CommentCard";
@@ -57,7 +57,11 @@ export default function PostComments() {
       {comments && (
         <div className="rounded-lg flex flex-col gap-2 bg-gray-50 p-3 shadow-md">
           {comments.map((comment) => (
-            <CommentCard comment={comment} key={comment._id} queryKey={["getPostComments", id]} />
+            <CommentCard
+              comment={comment}
+              key={comment._id}
+              queryKey={["getPostComments", id]}
+            />
           ))}
         </div>
       )}

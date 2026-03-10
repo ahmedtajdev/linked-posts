@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext, useRef } from "react";
 import { IoIosSend } from "react-icons/io";
 import { FaRegImage } from "react-icons/fa6";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-toastify";
 import { Oval } from "react-loader-spinner";

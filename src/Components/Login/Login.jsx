@@ -7,7 +7,7 @@ import { RotatingLines } from "react-loader-spinner";
 import { Link, useNavigate } from "react-router-dom";
 import { LuEyeOff } from "react-icons/lu";
 import { LuEye } from "react-icons/lu";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 
 const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 

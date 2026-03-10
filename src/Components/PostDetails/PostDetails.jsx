@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import PostCard from "../PostCard/PostCard";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import LoadingPage from "../LoadingPage/LoadingPage";
 import PostComments from "../PostComments/PostComments";
 
