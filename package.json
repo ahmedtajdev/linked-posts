@@ -17,7 +17,6 @@
     "axios": "^1.13.4",
     "flowbite": "^4.0.1",
     "framer-motion": "^12.34.0",
-    "gh-pages": "^6.3.0",
     "jwt-decode": "^4.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
