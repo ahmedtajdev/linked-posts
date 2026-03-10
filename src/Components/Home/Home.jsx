@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import { authContext } from "../../Context/authContext";
+import { authContext } from "../../Context/AuthContext";
 import PostCard from "../PostCard/PostCard";
 import LoadingPage from "../LoadingPage/LoadingPage";
 import { useQuery } from "@tanstack/react-query";
